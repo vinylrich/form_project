@@ -16,5 +16,10 @@ namespace lets_make_a_plaann
         {
             InitializeComponent();
         }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
     }
 }

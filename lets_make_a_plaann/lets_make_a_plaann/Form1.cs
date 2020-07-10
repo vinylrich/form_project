@@ -42,5 +42,10 @@ namespace lets_make_a_plaann
             Form2 showForm2 = new Form2();
             showForm2.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

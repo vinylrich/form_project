@@ -33,8 +33,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.planner = new System.Windows.Forms.Button();
+            this.diary = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -73,31 +73,33 @@
             this.textBox4.Size = new System.Drawing.Size(431, 234);
             this.textBox4.TabIndex = 4;
             // 
-            // button1
+            // planner
             // 
-            this.button1.Location = new System.Drawing.Point(708, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 36);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "플래너";
-            this.button1.UseVisualStyleBackColor = true;
+            this.planner.Location = new System.Drawing.Point(708, 180);
+            this.planner.Name = "planner";
+            this.planner.Size = new System.Drawing.Size(103, 36);
+            this.planner.TabIndex = 5;
+            this.planner.Text = "플래너";
+            this.planner.UseVisualStyleBackColor = true;
+            this.planner.Click += new System.EventHandler(this.planner_Click);
             // 
-            // button2
+            // diary
             // 
-            this.button2.Location = new System.Drawing.Point(708, 256);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 34);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "일기";
-            this.button2.UseVisualStyleBackColor = true;
+            this.diary.Location = new System.Drawing.Point(708, 256);
+            this.diary.Name = "diary";
+            this.diary.Size = new System.Drawing.Size(103, 34);
+            this.diary.TabIndex = 6;
+            this.diary.Text = "일기";
+            this.diary.UseVisualStyleBackColor = true;
+            this.diary.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 533);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.diary);
+            this.Controls.Add(this.planner);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -115,8 +117,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button planner;
+        private System.Windows.Forms.Button diary;
     }
 }
 

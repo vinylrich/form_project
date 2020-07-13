@@ -1,6 +1,6 @@
 ﻿namespace lets_make_a_plaann
 {
-    partial class Form2
+    partial class checkplan
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,7 @@
             this.add = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.back_to_Main = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -67,11 +68,21 @@
             this.button3.Text = "주석";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // back_to_Main
+            // 
+            this.back_to_Main.Location = new System.Drawing.Point(619, 341);
+            this.back_to_Main.Name = "back_to_Main";
+            this.back_to_Main.Size = new System.Drawing.Size(75, 23);
+            this.back_to_Main.TabIndex = 4;
+            this.back_to_Main.Text = "뒤로가기";
+            this.back_to_Main.Click += new System.EventHandler(this.back_to_Main_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back_to_Main);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.add);
@@ -88,5 +99,6 @@
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Button button3;
+        private MetroFramework.Controls.MetroButton back_to_Main;
     }
 }

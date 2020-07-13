@@ -11,14 +11,12 @@ using System.Windows.Forms;
 
 namespace lets_make_a_plaann
 {
-    public partial class Form1 : MetroForm
+    public partial class Main : MetroForm
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }
-        public static readonly Form1 theForm1 = new Form1();
-        public static readonly Form2 theForm2 = new Form2();
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -35,11 +33,11 @@ namespace lets_make_a_plaann
             MessageBox.Show("플래너를 쓰십시오");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void check_plan_Click(object sender, EventArgs e)
         {
 
             this.Visible = false; 
-            Form2 showForm2 = new Form2();
+            checkplan showForm2 = new checkplan();
             showForm2.Show();
         }
 

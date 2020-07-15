@@ -21,8 +21,14 @@ namespace lets_make_a_plaann
         private void back_to_Main_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Main main = new Main();
+            PlannerForm main = new PlannerForm();
             main.Show();
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
         }
     }
 }
+    

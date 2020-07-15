@@ -40,6 +40,7 @@
             this.monthCalendar1.Location = new System.Drawing.Point(230, 92);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // add
             // 
@@ -77,7 +78,7 @@
             this.back_to_Main.Text = "뒤로가기";
             this.back_to_Main.Click += new System.EventHandler(this.back_to_Main_Click);
             // 
-            // Form2
+            // checkplan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,8 +88,8 @@
             this.Controls.Add(this.delete);
             this.Controls.Add(this.add);
             this.Controls.Add(this.monthCalendar1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "checkplan";
+            this.Text = "check";
             this.ResumeLayout(false);
 
         }

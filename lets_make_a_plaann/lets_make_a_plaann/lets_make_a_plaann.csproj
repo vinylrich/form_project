@@ -56,11 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="DairyForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="DairyForm.Designer.cs">
+      <DependentUpon>DairyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlannerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlannerForm.Designer.cs">
+      <DependentUpon>PlannerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="checkplan.cs">
       <SubType>Form</SubType>
@@ -70,8 +77,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="DairyForm.resx">
+      <DependentUpon>DairyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlannerForm.resx">
+      <DependentUpon>PlannerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="checkplan.resx">
       <DependentUpon>checkplan.cs</DependentUpon>

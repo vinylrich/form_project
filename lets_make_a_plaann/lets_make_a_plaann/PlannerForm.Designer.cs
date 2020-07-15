@@ -1,6 +1,6 @@
 ﻿namespace lets_make_a_plaann
 {
-    partial class Main
+    partial class PlannerForm
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -41,6 +41,7 @@
             this.check_plan = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.text_ = new System.Windows.Forms.Label();
+            this.connect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -50,42 +51,42 @@
             // year_box
             // 
             this.year_box.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.year_box.Location = new System.Drawing.Point(196, 67);
+            this.year_box.Location = new System.Drawing.Point(220, 76);
             this.year_box.Name = "year_box";
-            this.year_box.Size = new System.Drawing.Size(147, 25);
+            this.year_box.Size = new System.Drawing.Size(165, 25);
             this.year_box.TabIndex = 1;
             // 
             // month_box
             // 
             this.month_box.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.month_box.Location = new System.Drawing.Point(373, 67);
+            this.month_box.Location = new System.Drawing.Point(420, 76);
             this.month_box.Name = "month_box";
-            this.month_box.Size = new System.Drawing.Size(147, 25);
+            this.month_box.Size = new System.Drawing.Size(165, 25);
             this.month_box.TabIndex = 2;
             // 
             // day_box
             // 
             this.day_box.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.day_box.Location = new System.Drawing.Point(563, 67);
+            this.day_box.Location = new System.Drawing.Point(633, 76);
             this.day_box.Name = "day_box";
-            this.day_box.Size = new System.Drawing.Size(147, 25);
+            this.day_box.Size = new System.Drawing.Size(165, 25);
             this.day_box.TabIndex = 3;
             // 
             // text
             // 
             this.text.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.text.Location = new System.Drawing.Point(226, 166);
+            this.text.Location = new System.Drawing.Point(254, 188);
             this.text.Multiline = true;
             this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(431, 234);
+            this.text.Size = new System.Drawing.Size(484, 265);
             this.text.TabIndex = 4;
             // 
             // planner
             // 
             this.planner.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.planner.Location = new System.Drawing.Point(708, 180);
+            this.planner.Location = new System.Drawing.Point(796, 204);
             this.planner.Name = "planner";
-            this.planner.Size = new System.Drawing.Size(103, 36);
+            this.planner.Size = new System.Drawing.Size(116, 41);
             this.planner.TabIndex = 5;
             this.planner.Text = "플래너";
             this.planner.UseVisualStyleBackColor = true;
@@ -94,9 +95,9 @@
             // diary
             // 
             this.diary.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.diary.Location = new System.Drawing.Point(708, 256);
+            this.diary.Location = new System.Drawing.Point(796, 290);
             this.diary.Name = "diary";
-            this.diary.Size = new System.Drawing.Size(103, 34);
+            this.diary.Size = new System.Drawing.Size(116, 39);
             this.diary.TabIndex = 6;
             this.diary.Text = "일기";
             this.diary.UseVisualStyleBackColor = true;
@@ -106,7 +107,7 @@
             // 
             this.year_label.AutoSize = true;
             this.year_label.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.year_label.Location = new System.Drawing.Point(202, 45);
+            this.year_label.Location = new System.Drawing.Point(227, 51);
             this.year_label.Name = "year_label";
             this.year_label.Size = new System.Drawing.Size(124, 17);
             this.year_label.TabIndex = 7;
@@ -116,7 +117,7 @@
             // 
             this.month_label.AutoSize = true;
             this.month_label.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.month_label.Location = new System.Drawing.Point(385, 45);
+            this.month_label.Location = new System.Drawing.Point(433, 51);
             this.month_label.Name = "month_label";
             this.month_label.Size = new System.Drawing.Size(110, 17);
             this.month_label.TabIndex = 8;
@@ -126,7 +127,7 @@
             // 
             this.day_label.AutoSize = true;
             this.day_label.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.day_label.Location = new System.Drawing.Point(564, 45);
+            this.day_label.Location = new System.Drawing.Point(634, 51);
             this.day_label.Name = "day_label";
             this.day_label.Size = new System.Drawing.Size(110, 17);
             this.day_label.TabIndex = 9;
@@ -135,9 +136,9 @@
             // check_plan
             // 
             this.check_plan.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.check_plan.Location = new System.Drawing.Point(708, 455);
+            this.check_plan.Location = new System.Drawing.Point(796, 516);
             this.check_plan.Name = "check_plan";
-            this.check_plan.Size = new System.Drawing.Size(121, 34);
+            this.check_plan.Size = new System.Drawing.Size(136, 39);
             this.check_plan.TabIndex = 10;
             this.check_plan.Text = "쓴 내용 보기";
             this.check_plan.UseVisualStyleBackColor = true;
@@ -146,28 +147,41 @@
             // save
             // 
             this.save.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F);
-            this.save.Location = new System.Drawing.Point(335, 432);
+            this.save.Location = new System.Drawing.Point(377, 490);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(228, 57);
+            this.save.Size = new System.Drawing.Size(256, 65);
             this.save.TabIndex = 11;
             this.save.Text = "저장";
             this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // text_
             // 
             this.text_.AutoSize = true;
             this.text_.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F);
-            this.text_.Location = new System.Drawing.Point(226, 145);
+            this.text_.Location = new System.Drawing.Point(254, 164);
             this.text_.Name = "text_";
             this.text_.Size = new System.Drawing.Size(124, 17);
             this.text_.TabIndex = 12;
             this.text_.Text = "내용을 입력하세요";
             // 
+            // connect
+            // 
+            this.connect.Location = new System.Drawing.Point(25, 164);
+            this.connect.Name = "connect";
+            this.connect.Size = new System.Drawing.Size(75, 23);
+            this.connect.TabIndex = 13;
+            this.connect.Text = "연결";
+            this.connect.UseVisualStyleBackColor = true;
+            this.connect.Click += new System.EventHandler(this.connect_Click);
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 528);
+            this.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.ClientSize = new System.Drawing.Size(971, 616);
+            this.Controls.Add(this.connect);
             this.Controls.Add(this.text_);
             this.Controls.Add(this.save);
             this.Controls.Add(this.check_plan);
@@ -180,9 +194,13 @@
             this.Controls.Add(this.day_box);
             this.Controls.Add(this.month_box);
             this.Controls.Add(this.year_box);
+            this.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "Main";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Padding = new System.Windows.Forms.Padding(22, 68, 22, 23);
+            this.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.None;
+            this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Text = "planner";
+            this.Theme = MetroFramework.MetroThemeStyle.Light;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,6 +220,7 @@
         private System.Windows.Forms.Button check_plan;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Label text_;
+        private System.Windows.Forms.Button connect;
     }
 }
 

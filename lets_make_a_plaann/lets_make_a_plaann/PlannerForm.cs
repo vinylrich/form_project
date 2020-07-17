@@ -43,7 +43,7 @@ namespace lets_make_a_plaann
             this.Visible = false;
             DairyForm showForm2 = new DairyForm();
             showForm2.Show();
-            MessageBox.Show("다이어리 모드");
+            MessageBox.Show("다이어리 모드!");
         }
 
         private void planner_Click(object sender, EventArgs e)//"플래너"를 클릭하면 plannerForm.cs로 넘어가 폼이 바뀜
@@ -67,31 +67,20 @@ namespace lets_make_a_plaann
                 string day = day_box.Text;
                 string contents = text.Text;
                 conn.Open();
-
+                string date = year + "-" + month + "-" + day;
+                DateTime d = new DateTime() ;
                 SqlCommand command = new SqlCommand();
 
                 command.Connection = conn;
-                command.CommandText = "INSERT INTO DATE(year, month, day,contents) VALUES('" + year + "','" +month+ "','" + day+ "','"+contents+ "');";
-                MessageBox.Show("저장 성공!");
+                command.CommandText = "INSERT INTO pt(Date_,contents) VALUES('" + date + "','" + contents + "');";
                 command.ExecuteNonQuery();
+                MessageBox.Show("저장 성공!");
+                
 
             }
         }
 
 
-        private void connect_Click(object sender, EventArgs e)
-        {
-            string connectionString = "server = 127.0.0.1,1433; uid = ajtwoddltka; pwd = toor; database = PD_DB;";
-            SqlConnection sqlConn = new SqlConnection(connectionString);
-            sqlConn.Open();   //DB 연결
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = sqlConn;
-            cmd.CommandText = "SELECT * FROM date";
-                
-            
-
-            sqlConn.Close();	//DB 연결 해제
-        }
     }
 }

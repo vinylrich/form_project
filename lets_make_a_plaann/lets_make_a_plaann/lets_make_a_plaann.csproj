@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
@@ -56,12 +59,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBHelper.cs" />
     <Compile Include="DairyForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DairyForm.Designer.cs">
       <DependentUpon>DairyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkcontents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkcontents.Designer.cs">
+      <DependentUpon>checkcontents.cs</DependentUpon>
     </Compile>
     <Compile Include="PlannerForm.cs">
       <SubType>Form</SubType>
@@ -77,6 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="checkcontents.resx">
+      <DependentUpon>checkcontents.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DairyForm.resx">
       <DependentUpon>DairyForm.cs</DependentUpon>
     </EmbeddedResource>

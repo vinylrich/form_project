@@ -41,7 +41,6 @@
             this.check_plan = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.text_ = new System.Windows.Forms.Label();
-            this.connect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -165,23 +164,12 @@
             this.text_.TabIndex = 12;
             this.text_.Text = "내용을 입력하세요";
             // 
-            // connect
-            // 
-            this.connect.Location = new System.Drawing.Point(25, 164);
-            this.connect.Name = "connect";
-            this.connect.Size = new System.Drawing.Size(75, 23);
-            this.connect.TabIndex = 13;
-            this.connect.Text = "연결";
-            this.connect.UseVisualStyleBackColor = true;
-            this.connect.Click += new System.EventHandler(this.connect_Click);
-            // 
-            // Main
+            // PlannerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(971, 616);
-            this.Controls.Add(this.connect);
             this.Controls.Add(this.text_);
             this.Controls.Add(this.save);
             this.Controls.Add(this.check_plan);
@@ -195,7 +183,7 @@
             this.Controls.Add(this.month_box);
             this.Controls.Add(this.year_box);
             this.Font = new System.Drawing.Font("나눔스퀘어 Bold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Name = "Main";
+            this.Name = "PlannerForm";
             this.Padding = new System.Windows.Forms.Padding(22, 68, 22, 23);
             this.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.None;
             this.Style = MetroFramework.MetroColorStyle.Green;
@@ -220,7 +208,6 @@
         private System.Windows.Forms.Button check_plan;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Label text_;
-        private System.Windows.Forms.Button connect;
     }
 }
 

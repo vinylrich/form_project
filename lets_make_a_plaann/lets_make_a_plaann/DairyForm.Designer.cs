@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.connect = new System.Windows.Forms.Button();
             this.text_ = new System.Windows.Forms.Label();
             this.save = new System.Windows.Forms.Button();
             this.check_plan = new System.Windows.Forms.Button();
@@ -42,15 +41,6 @@
             this.month_box = new System.Windows.Forms.TextBox();
             this.year_box = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // connect
-            // 
-            this.connect.Location = new System.Drawing.Point(25, 167);
-            this.connect.Name = "connect";
-            this.connect.Size = new System.Drawing.Size(75, 23);
-            this.connect.TabIndex = 26;
-            this.connect.Text = "연결";
-            this.connect.UseVisualStyleBackColor = true;
             // 
             // text_
             // 
@@ -71,6 +61,7 @@
             this.save.TabIndex = 24;
             this.save.Text = "저장";
             this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click_1);
             // 
             // check_plan
             // 
@@ -81,6 +72,7 @@
             this.check_plan.TabIndex = 23;
             this.check_plan.Text = "쓴 내용 보기";
             this.check_plan.UseVisualStyleBackColor = true;
+            this.check_plan.Click += new System.EventHandler(this.check_plan_Click_1);
             // 
             // day_label
             // 
@@ -121,6 +113,7 @@
             this.diary.TabIndex = 19;
             this.diary.Text = "다이어리";
             this.diary.UseVisualStyleBackColor = true;
+            this.diary.Click += new System.EventHandler(this.diary_Click_1);
             // 
             // planner
             // 
@@ -171,7 +164,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 616);
-            this.Controls.Add(this.connect);
             this.Controls.Add(this.text_);
             this.Controls.Add(this.save);
             this.Controls.Add(this.check_plan);
@@ -193,8 +185,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button connect;
         private System.Windows.Forms.Label text_;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button check_plan;
